@@ -1,0 +1,15 @@
+
+  {
+    "welcome": "Welcome to my app!",
+    "admin_portal": "ADMIN PORTAL",
+    "sign_in": "Sign In",
+    "email_label": "Email",
+    "email_placeholder": "Enter mail",
+    "password_label": "Password",
+    "password_placeholder": "Password",
+    "sign_in_button": "Sign In",
+    "forgot_password": "Forgot Password?",
+    "click_here": "Click Here",
+     "dark_mode": "Toggle Dark Mode"
+  }
+  
