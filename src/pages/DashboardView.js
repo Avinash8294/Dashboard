@@ -1,6 +1,8 @@
 import React from 'react'
 import StatCard from './StatCard'
-import StateCard1 from './StateCard1'
+import UserManagementCard from './UserManagementCard'
+import DeviceManagementCard from './DeviceManagementCard'
+import CustomerManagementCard from './CustomerManagementCard'
 const DashboardView = () => {
   return (
     <div className="min-h-screen bg-gray-100 p-8">
@@ -9,9 +11,10 @@ const DashboardView = () => {
       <h1 className="text-3xl font-bold mb-6 text-[#10100F]">My Dashboard</h1>
       {/* <div className="grid grid-cols-1 md:grid-cols-3 gap-6"> */}
     <div className="flex gap-5">
-        <StateCard1/>
-        <StateCard1/>
-        <StateCard1/>
+        <UserManagementCard/>
+        <DeviceManagementCard/>
+        <CustomerManagementCard/>
+       
         </div>
         {/* <StatCard
           title="User Management"

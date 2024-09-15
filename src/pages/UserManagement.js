@@ -5,8 +5,8 @@ import { ReactComponent as X_mark } from "../assets/icons/userManagement/xMark.s
 const UserManagement = () => {
   const itemPerPage = 9;
   const [currentPage, setCurrentPage] = useState(1);
-const [isFilterPopUp,setIsFilterPopUp]= useState(false) 
-const filterRef = useRef(null)
+  const [isFilterPopUp, setIsFilterPopUp] = useState(false);
+  const filterRef = useRef(null);
 
   const totalPages = Math.ceil(userManagementData?.length / itemPerPage);
 
@@ -118,21 +118,23 @@ const filterRef = useRef(null)
     return buttons;
   };
 
-
   // hide filter when clicked outside
-  useEffect(()=>{
-    const handleClickOutside=(e)=>  {
-      if (e.target !== filterRef.current && !filterRef.current.contains(e.target)) {
+  useEffect(() => {
+    const handleClickOutside = (e) => {
+      if (
+        e.target !== filterRef.current &&
+        !filterRef.current.contains(e.target)
+      ) {
         setIsFilterPopUp(false);
       }
     };
-    if(isFilterPopUp){
-      document.addEventListener('click', handleClickOutside)
-    }else{
-      document.removeEventListener('click', handleClickOutside)
+    if (isFilterPopUp) {
+      document.addEventListener("click", handleClickOutside);
+    } else {
+      document.removeEventListener("click", handleClickOutside);
     }
-    return ()=>document.removeEventListener('click', handleClickOutside)
-  },[isFilterPopUp])
+    return () => document.removeEventListener("click", handleClickOutside);
+  }, [isFilterPopUp]);
   return (
     <div className="flex flex-col gap-5">
       <div className="flex justify-between items-center flex-wrap space-y-4 pr-3">
@@ -146,75 +148,69 @@ const filterRef = useRef(null)
             />
             <i className="fa-solid fa-magnifying-glass absolute top-[20%] text-lg right-[5%] text-gray-300 "></i>
           </div>
-          <div className="relative">
-            <div  ref={filterRef} onClick={()=>setIsFilterPopUp(!isFilterPopUp)} className="border border-gray-700 center gap-2 px-4 py-2 rounded cursor-pointer">
+          <div ref={filterRef} className="relative">
+            <div
+              onClick={() => setIsFilterPopUp(!isFilterPopUp)}
+              className="border border-gray-700 center gap-2 px-4 py-2 rounded cursor-pointer">
               {" "}
               Filter <FilterIcon />
             </div>
-          {isFilterPopUp && (
+            {isFilterPopUp && (
               <div className="absolute right-0 w-80 lg:h-[700px] p-5 py-8 pb-44 lg:pb-72 rounded bg-white">
-              <div className=" flex flex-col gap-6 relative">
-
-              
-              <div className="flex justify-between items-center">
-                <div className="font-bold text-xl">Filters</div>
-                <div onClick={()=>setIsFilterPopUp(!isFilterPopUp)} className="cursor-pointer">
-                <X_mark/> 
-                </div>
-              </div>
-              <div className="flex flex-col gap-2">
-                <div className="font-medium">Role</div>
-                <div className="flex flex-col gap-2 text-[#4B4F50]">
-                  <div className="flex gap-3">
-                  <input id="all" type="checkbox" className=""/>
-                  <label htmlFor="all">
-                    All
-                  </label>
+                <div className=" flex flex-col gap-6 relative">
+                  <div className="flex justify-between items-center">
+                    <div className="font-bold text-xl">Filters</div>
+                    <div
+                      onClick={() => setIsFilterPopUp(!isFilterPopUp)}
+                      className="cursor-pointer">
+                      <X_mark />
+                    </div>
                   </div>
-                  <div className="flex gap-3">
-                  <input id="all" type="checkbox" className="size-"/>
-                  <label htmlFor="all">
-                    Customer Admin
-                  </label>
+                  <div className="flex flex-col gap-2">
+                    <div className="font-medium">Role</div>
+                    <div className="flex flex-col gap-2 text-[#4B4F50]">
+                      <div className="flex gap-3">
+                        <input id="all" type="checkbox" className="" />
+                        <label htmlFor="all">All</label>
+                      </div>
+                      <div className="flex gap-3">
+                        <input id="all" type="checkbox" className="size-" />
+                        <label htmlFor="all">Customer Admin</label>
+                      </div>
+                      <div className="flex gap-3">
+                        <input id="all" type="checkbox" className="size-" />
+                        <label htmlFor="all">Billing Admin</label>
+                      </div>
+                    </div>
                   </div>
-                  <div className="flex gap-3">
-                  <input id="all" type="checkbox" className="size-"/>
-                  <label htmlFor="all">
-                    Billing Admin
-                  </label>
-                  </div>
-                </div>
-              </div>
-              <div className="flex flex-col gap-2">
-                <div className="font-medium">Status</div>
-                <div className="flex flex-col gap-2 text-[#4B4F50]">
-                <div className="flex gap-3">
-                  <input id="all" type="checkbox" className="size-"/>
-                  <label htmlFor="all">
-                    All
-                  </label>
-                  </div>
-                  <div className="flex gap-3">
-                  <input id="all" type="checkbox" className="size-"/>
-                  <label htmlFor="all">
-                    Active
-                  </label>
-                  </div>
-                  <div className="flex gap-3">
-                  <input id="all" type="checkbox" className="size-"/>
-                  <label htmlFor="all">
-                    Inactive
-                  </label>
+                  <div className="flex flex-col gap-2">
+                    <div className="font-medium">Status</div>
+                    <div className="flex flex-col gap-2 text-[#4B4F50]">
+                      <div className="flex gap-3">
+                        <input id="all" type="checkbox" className="size-" />
+                        <label htmlFor="all">All</label>
+                      </div>
+                      <div className="flex gap-3">
+                        <input id="all" type="checkbox" className="size-" />
+                        <label htmlFor="all">Active</label>
+                      </div>
+                      <div className="flex gap-3">
+                        <input id="all" type="checkbox" className="size-" />
+                        <label htmlFor="all">Inactive</label>
+                      </div>
+                    </div>
                   </div>
                 </div>
+                <div className="absolute bottom-7 right-0 flex justify-evenly w-full px-2 h-10">
+                  <button className="w-32 py-1 rounded border border-[#182D40]">
+                    Reset
+                  </button>
+                  <button className="w-32 py-1 rounded border border-[#182D40] bg-[#182D40] text-white">
+                    Apply
+                  </button>
+                </div>
               </div>
-            </div>
-            <div className="absolute bottom-7 right-0 flex justify-evenly w-full px-2 h-10">
-              <button className="w-32 py-1 rounded border border-[#182D40]">Reset</button>
-              <button className="w-32 py-1 rounded border border-[#182D40] bg-[#182D40] text-white">Apply</button>
-            </div>
-            </div>
-          )}
+            )}
           </div>
           <div className=" bg-[#108699] text-white  px-4 py-2  rounded cursor-pointer">
             Add New User
