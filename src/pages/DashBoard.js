@@ -13,11 +13,11 @@ import RoleBasedAccess from './RoleBasedAccess';
 function DashBoard() {
   return (
    
-      <div className="flex">
+      <div className="flex min-h-screen">
         <Sidebar />
-        <div className="flex-1">
+        <div className=" flex flex-col flex-grow ">
           <Header />
-          <main className="p-4">
+          <main className="flex-grow">
             <Routes>
             <Route path="/" element={<DashboardView />} />   
               <Route path="user-management" element={<UserManagement />} />
