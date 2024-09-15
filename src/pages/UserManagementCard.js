@@ -1,6 +1,6 @@
 import React from 'react'
 
-const StateCard1 = () => {
+const UserManagementCard = () => {
     return (
         <div className="bg-white p-4 rounded-lg shadow-sm border-2 w-[33%] font-regular">
             <div className="text-2xl font-bold mb-4 text-cardHeading">User Management</div>
@@ -30,4 +30,4 @@ const StateCard1 = () => {
     )
 }
 
-export default StateCard1
+export default UserManagementCard
