@@ -14,13 +14,12 @@ const Sidebar = () => {
     setActiveLink(path);
   };
 
-  const active = ()=>{
-    return(
-      <>
+  const activeTab = (tab) => {
+    return (
+      activeLink === tab && "bg-white border-r-4 border-black text-[#108699]"
+    );
+  };
 
-      </>
-    )
-  }
   return (
     <div className="w-80 bg-[#108699] h-screen pt-5 text-white">
       <div className="center gap-7 pt-5">
@@ -32,53 +31,65 @@ const Sidebar = () => {
         <ul className=" flex flex-col ">
           <Link
             to="/dashboard"
-            className={`link ${
-              activeLink === "dashboard" ? "active" : ""
-            }`}
-            onClick={() => handleLinkClick("editquestions")}
+            className={` ${activeTab("dashboard")}`}
+            onClick={() => handleLinkClick("dashboard")}
           >
             <li className=" flex gap-3  p-5 pl-10 hover:bg-white hover:text-black cursor-pointer">
-              {/* <img src={dashboard_icon} alt="dashboard" /> */}
               <Dashboard_Icon />
               Dashboard
             </li>
           </Link>
 
-          <Link to="user-management" className="">
+          <Link
+            to="user-management"
+            className={` ${activeTab("User_Management")}`}
+            onClick={() => handleLinkClick("User_Management")}
+          >
             <li className=" flex gap-3  p-5 pl-10 hover:bg-white hover:text-black cursor-pointer">
-              {/* <img src={dashboard_icon} alt="dashboard" /> */}
               <User_Management_Icon />
               User Management
             </li>
           </Link>
 
-          <Link to="device-management" className="">
+          <Link
+            to="device-management"
+            className={` ${activeTab("Device_Management")}`}
+            onClick={() => handleLinkClick("Device_Management")}
+          >
             <li className=" flex gap-3  p-5 pl-10 hover:bg-white hover:text-black cursor-pointer">
-              {/* <img src={dashboard_icon} alt="dashboard" /> */}
               <Device_Management_Icon />
               Device Management
             </li>
           </Link>
 
-          <Link to="inventory-management" className="">
+          <Link
+            to="inventory-management"
+            className={` ${activeTab("Inventory_Management")}`}
+            onClick={() => handleLinkClick("Inventory_Management")}
+          >
             <li className=" flex gap-3  p-5 pl-10 hover:bg-white hover:text-black cursor-pointer">
-              {/* <img src={dashboard_icon} alt="dashboard" /> */}
               <Inventory_Management_Icon />
               Inventory Management
             </li>
           </Link>
 
-          <NavLink to="customer-management" className="">
+          <NavLink
+            to="customer-management"
+            className={` ${activeTab("Customer_Management")}`}
+            onClick={() => handleLinkClick("Customer_Management")}
+          >
             <li className=" flex gap-3  p-5 pl-10 hover:bg-white hover:text-black cursor-pointer">
-              {/* <img src={dashboard_icon} alt="dashboard" /> */}
               <Customer_Management_Icon />
               Customer Management
             </li>
           </NavLink>
 
-          <Link to="role-based-access" className="">
+          <Link
+            to="role-based-access"
+            className={` ${activeTab("Role_Based_Access")}`}
+            onClick={() => handleLinkClick("Role_Based_Access")}
+          >
             <li className=" flex gap-3  p-5 pl-10 hover:bg-white hover:text-black cursor-pointer">
-              {/* <img src={dashboard_icon} alt="dashboard" /> */}
               <Role_Based_Access_Icon />
               Role Based Access
             </li>
