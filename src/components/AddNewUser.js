@@ -244,7 +244,6 @@ const AddNewUser = ({ isOpen, OnSubmit }) => {
         </form>
       </div>
       {/* empty field warning---  --- --- */}
-      &&
       <div
         className={`absolute top-1 right-1 text-white  px-2 md:px-5 py-5  flex items-center justify-between gap-5  ${
           isEmptyFieldWarning &&
