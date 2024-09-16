@@ -2,11 +2,17 @@ import React, { useEffect, useRef, useState } from "react";
 import userManagementData from "../temp/user_management_data.json";
 import { ReactComponent as FilterIcon } from "../assets/icons/userManagement/filterIcon.svg";
 import { ReactComponent as X_mark } from "../assets/icons/userManagement/xMark.svg";
+import AddNewUser from "../components/AddNewUser";
 const UserManagement = () => {
   const itemPerPage = 9;
   const [currentPage, setCurrentPage] = useState(1);
   const [isFilterPopUp, setIsFilterPopUp] = useState(false);
+  const [isCreateNewUserForm, setIsCreateNewUserForm] = useState(false);
   const filterRef = useRef(null);
+
+  const handleCreateNewUserForm = () => {
+    setIsCreateNewUserForm(!isCreateNewUserForm);
+  };
 
   const totalPages = Math.ceil(userManagementData?.length / itemPerPage);
 
@@ -136,8 +142,8 @@ const UserManagement = () => {
     return () => document.removeEventListener("click", handleClickOutside);
   }, [isFilterPopUp]);
   return (
-    <div className="flex flex-col gap-5">
-      <div className="flex justify-between items-center flex-wrap space-y-4 pr-3">
+    <div className="flex flex-col gap-5 px-4 relative">
+      <div className="flex justify-between items-center flex-wrap space-y-4 2xl:pr-8">
         <div className="font-medium text-2xl">User Management</div>
         <div className="flex items-center justify-start md:justify-center gap-5  flex-wrap">
           <div className="search relative">
@@ -212,12 +218,23 @@ const UserManagement = () => {
               </div>
             )}
           </div>
-          <div className=" bg-[#108699] text-white  px-4 py-2  rounded cursor-pointer">
-            Add New User
+          <div className="">
+            <div
+              onClick={handleCreateNewUserForm}
+              className="bg-[#108699] text-white  px-4 py-2  rounded cursor-pointer">
+              Add New User
+            </div>
+
+            {isCreateNewUserForm && (
+              <div className="absolute bg-slate-400/30 center inset-0">
+                {" "}
+                <AddNewUser isOpen={() => setIsCreateNewUserForm(false)} />
+              </div>
+            )}
           </div>
         </div>
       </div>
-      <div className=" w-[60vw] lg:w-[70vw] xl:w-[75vw] 2xl:w-[81vw] h-[65vh] lg:h-[73vh] overflow-x-auto">
+      <div className=" w-[60vw] lg:w-[70vw] xl:w-[75vw] 2xl:w-[80vw] h-[65vh] lg:h-[70vh] overflow-x-auto">
         <table className="min-w-full table-auto border-collapse border border-gray-300 border-t rounded overflow-hidden">
           <thead className="">
             <tr className="bg-[#1E4154] text-white">
