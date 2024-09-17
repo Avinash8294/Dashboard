@@ -15,7 +15,7 @@ const Header = () => {
     }
   }, [darkMode]);
   return (
-    <header className="bg-gray-50 border-b-2 shadow-md p-4 flex justify-between items-center dark:bg-gray-800">
+    <header className="bg-gray-50 border-b-2 shadow-md p-4 z-20 flex justify-between items-center dark:bg-gray-800">
       <h1 className="text-xl font-bold"></h1>
       <div className="flex items-center space-x-3 relative">
         {/* Avatar */}
