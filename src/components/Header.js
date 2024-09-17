@@ -5,7 +5,7 @@ import { toggleDarkMode } from "../redux/darkModeSlice";
 const Header = () => {
   const dispatch = useDispatch();
   const darkMode = useSelector((state) => state.darkMode.darkMode);
-  const [userMenu, setUserMenu] = useState(true);
+  const [userMenu, setUserMenu] = useState(false);
 
   useEffect(() => {
     if (darkMode) {
@@ -32,7 +32,12 @@ const Header = () => {
         </div>
 
         {/* Dropdown Icon */}
-        <div onClick={() => setUserMenu(!userMenu)} className=" p-1">
+        <div
+          onClick={() => setUserMenu(!userMenu)}
+          tabIndex={0} // Make the div focusable
+          onBlur={() => setUserMenu(false)} // Closes menu when it loses focus
+          className=" p-1"
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             className={` h-5 w-5 text-gray-400 transition-all transition-400 ${
@@ -49,14 +54,20 @@ const Header = () => {
               d="M19 9l-7 7-7-7"
             />
           </svg>
+          {userMenu && (
+            <div className="p-4 absolute right-0 top-12 bg-white shadow-md rounded-md text-lg w-[130%]">
+              <div className="p-2 hover:bg-slate-100 cursor-pointer">
+                My Profile
+              </div>
+              <div className="p-2 hover:bg-slate-100 cursor-pointer">
+                Change password
+              </div>
+              <div className="p-2 hover:bg-slate-100 cursor-pointer text-red-500">
+                Logout
+              </div>
+            </div>
+          )}
         </div>
-        {userMenu && (
-          <div className=" p-4 absolute right-0 top-12 bg-white shadow-md rounded-md text-lg  w-[130%] ">
-            <div className="p-2">My Profile</div>
-            <div className="p-2">Change password</div>
-            <div className=" p-2 text-red-500">Logout</div>
-          </div>
-        )}
       </div>
     </header>
   );
