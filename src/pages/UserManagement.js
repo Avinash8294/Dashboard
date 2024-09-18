@@ -38,9 +38,9 @@ const UserManagement = () => {
   const renderPageButtons = () => {
     let startPage = Math.max(currentPage - 2, 1);
     let endPage = Math.min(currentPage + 2, totalPages);
-  
+
     const buttons = [];
-  
+
     for (let i = startPage; i <= endPage; i++) {
       buttons.push(
         <button
@@ -53,7 +53,7 @@ const UserManagement = () => {
         </button>
       );
     }
-  
+
     if (startPage > 1) {
       buttons.unshift(<span key="start-ellipsis">...</span>);
       buttons.unshift(
@@ -67,7 +67,7 @@ const UserManagement = () => {
         </button>
       );
     }
-  
+
     if (endPage < totalPages) {
       buttons.push(<span key="end-ellipsis">...</span>);
       buttons.push(
@@ -83,10 +83,9 @@ const UserManagement = () => {
         </button>
       );
     }
-  
+
     return buttons;
   };
-  
 
   // hide filter when clicked outside
   useEffect(() => {
@@ -109,15 +108,18 @@ const UserManagement = () => {
   // hide action when clicked outside
   useEffect(() => {
     const handleClickOutside = (event) => {
-      if (actionPopUpRef.current && !actionPopUpRef.current.contains(event.target)) {
+      if (
+        actionPopUpRef.current &&
+        !actionPopUpRef.current.contains(event.target)
+      ) {
         setActionDropDown(null); // Close the dropdown when clicked outside
       }
     };
 
-    document.addEventListener('mousedown', handleClickOutside);
-    
+    document.addEventListener("mousedown", handleClickOutside);
+
     return () => {
-      document.removeEventListener('mousedown', handleClickOutside);
+      document.removeEventListener("mousedown", handleClickOutside);
     };
   }, [actionPopUpRef]);
 
@@ -206,7 +208,7 @@ const UserManagement = () => {
             </div>
 
             {isCreateNewUserForm && (
-              <div className="absolute bg-slate-400/30 center inset-0  z-10">
+              <div className="fixed bg-black/70 center inset-0 pl-72 xl:pl-60  z-20">
                 {" "}
                 <AddNewUser isOpen={() => setIsCreateNewUserForm(false)} />
               </div>
@@ -263,17 +265,23 @@ const UserManagement = () => {
             {currentItems?.map((employee, index) => (
               <tr key={index} className="bg-[#F8F8F8]">
                 <td className="border border-gray-300 px-4 py-2 ">
-                  <div className="relative"  ref={index === actionDropDown ? actionPopUpRef : null} >
-                    <div onClick={() => toggleActionDropDown(index)} className="center cursor-pointer  py-3">
-                    <i
-                      className="fa-solid fa-ellipsis-vertical text-gray-400"
-                     ></i>
+                  <div
+                    className="relative"
+                    ref={index === actionDropDown ? actionPopUpRef : null}>
+                    <div
+                      onClick={() => toggleActionDropDown(index)}
+                      className="center cursor-pointer  py-3">
+                      <i className="fa-solid fa-ellipsis-vertical text-gray-400"></i>
                     </div>
-                   
+
                     {actionDropDown === index && (
                       <div className="absolute bg-white  py-3 w-36 -top-2 left-12 flex flex-col  gap-2 font-medium shadow-lg">
-                        <div className="hover:scale-[1.01] hover:bg-gray-100 px-5 py-1 w-full rounded">Edit details</div>
-                        <div className="hover:scale-[1.01] hover:bg-gray-100 px-5 py-1 rounded">Inactive</div>
+                        <div className="hover:scale-[1.01] hover:bg-gray-100 px-5 py-1 w-full rounded">
+                          Edit details
+                        </div>
+                        <div className="hover:scale-[1.01] hover:bg-gray-100 px-5 py-1 rounded">
+                          Inactive
+                        </div>
                       </div>
                     )}
                   </div>
