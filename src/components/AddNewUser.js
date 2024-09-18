@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import noDp from "../assets/images/noDp.png";
 import { ReactComponent as Camera_icon } from "../assets/icons/userManagement/cameraIcon.svg";
+import { motion,AnimatePresence } from "framer-motion";
 const AddNewUser = ({ isOpen, OnSubmit }) => {
   const [isEmptyFieldWarning, setIsEmptyFieldWarning] = useState(false);
   const [isSubmissionSuccess, setIsSubmissionSuccess] = useState(false);
@@ -46,6 +47,9 @@ const AddNewUser = ({ isOpen, OnSubmit }) => {
 
     if (emptyFields.length > 0) {
       setIsEmptyFieldWarning(true);
+      setTimeout(() => {
+        setIsEmptyFieldWarning(false)
+      }, 3000);
       console.log("field is empty");
       setIsSubmissionSuccess(false);
       return;
@@ -53,9 +57,12 @@ const AddNewUser = ({ isOpen, OnSubmit }) => {
       setIsEmptyFieldWarning(false);
       console.log("Form Data : ", formData);
       setIsSubmissionSuccess(true);
+      setTimeout(()=>{
+        setIsSubmissionSuccess(false);
+      },2000)
       setTimeout(() => {
         isOpen();
-      }, 2000);
+      }, 2500);
     }
   };
 
@@ -244,33 +251,42 @@ const AddNewUser = ({ isOpen, OnSubmit }) => {
         </form>
       </div>
       {/* empty field warning---  --- --- */}
-      <div
-        className={`absolute top-1 right-1 text-white  px-2 md:px-5 py-5  flex items-center justify-between gap-5  ${
-          isEmptyFieldWarning &&
-          " rounded-l-3xl border-l-4 border-l-[#7C0404] bg-[#BB2124]"
-        } ${
-          isSubmissionSuccess &&
-          " rounded-l-3xl border-l-4 border-l-[#00856E] bg-[#0AC2A2]"
-        }`}>
-        <div className="size-7 center rounded-full bg-white">
-          {isEmptyFieldWarning && (
-            <i className="fa-solid fa-exclamation text-[#BB2124]"></i>
-          )}
-          {isSubmissionSuccess && (
-            <i className="fa-solid fa-check text-[#0AC2A2]"></i>
-          )}
-        </div>
-        <div className="w-44 lg:w-72 2xl:w-80">
-          <div className="font-semibold">
-            {isEmptyFieldWarning && "Missing Fields"}{" "}
-            {isSubmissionSuccess && "User successfully added"}
+      <AnimatePresence mode="wait">
+      {(isEmptyFieldWarning || isSubmissionSuccess) && (
+     
+       <motion.div
+        initial={{opacity: 0,x:320}}
+        animate={{opacity: 1,x:0}}
+        exit={{opacity: 0,x:320}}
+        transition={{type:"keyframe"}}
+          className={`fixed bottom-3 right-0 text-white  px-2 md:px-5 py-5  flex items-center justify-between gap-5  ${
+            isEmptyFieldWarning &&
+            " rounded-l-3xl border-l-4 border-l-[#7C0404] bg-[#BB2124]"
+          } ${
+            isSubmissionSuccess &&
+            " rounded-l-3xl border-l-4 border-l-[#00856E] bg-[#0AC2A2]"
+          }`}>
+          <div className="size-7 center rounded-full bg-white">
+            {isEmptyFieldWarning && (
+              <i className="fa-solid fa-exclamation text-[#BB2124]"></i>
+            )}
+            {isSubmissionSuccess && (
+              <i className="fa-solid fa-check text-[#0AC2A2]"></i>
+            )}
           </div>
-          <div className="hidden lg:block">
-            {isEmptyFieldWarning &&
-              " One of the required field is empty or contains invalid data"}
+          <div className="w-44 lg:w-72 2xl:w-80">
+            <div className="font-semibold">
+              {isEmptyFieldWarning && "Missing Fields"}{" "}
+              {isSubmissionSuccess && "User successfully added"}
+            </div>
+            <div className="hidden lg:block">
+              {isEmptyFieldWarning &&
+                " One of the required field is empty or contains invalid data"}
+            </div>
           </div>
-        </div>
-      </div>
+        </motion.div>
+      )}
+      </AnimatePresence>
     </div>
   );
 };
