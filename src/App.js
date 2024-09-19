@@ -1,11 +1,9 @@
 
 import React from 'react';
-import { Routes, Route } from 'react-router-dom';
-import Login from './pages/Login';
+import { Route, Routes } from 'react-router-dom';
 import DashBoard from './pages/DashBoard';
 import ForgotPassword from './pages/ForgotPassword';
-import CheckDarkLanguage from './components/CheckDarkLanguage';
-
+import Login from './pages/Login';
 
 function App() {
   return (
