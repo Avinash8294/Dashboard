@@ -131,12 +131,12 @@ const UserManagement = () => {
           <div className="search relative">
             <input
               type="search"
-              className="border-2 border-gray-300 rounded outline-none md:w-44 lg:w-72 xl:w-80 p-2  pr-6"
+              className="border-2 border-gray-300 rounded outline-none md:w-44 lg:w-72 xl:w-80 2xl:w-96 p-2  pr-6"
               placeholder="First Name, Email or Contact Number"
             />
             <i className="fa-solid fa-magnifying-glass absolute top-[20%] text-lg right-[5%] text-gray-300 "></i>
           </div>
-          <div ref={filterRef} className="relative">
+          <div ref={filterRef} className="">
             <div
               onClick={() => setIsFilterPopUp(!isFilterPopUp)}
               className="border border-gray-700 center gap-2 px-4 py-2 rounded cursor-pointer">
@@ -144,7 +144,7 @@ const UserManagement = () => {
               Filter <FilterIcon />
             </div>
             {isFilterPopUp && (
-              <div className="absolute right-0 w-80 lg:h-[700px] p-5 py-8 pb-44 lg:pb-72 rounded bg-white">
+              <div className="fixed right-0 top-0 bottom-0 z-20 w-80  p-5 py-8 pb-44 lg:pb-72 rounded bg-white shadow-lg">
                 <div className=" flex flex-col gap-6 relative">
                   <div className="flex justify-between items-center">
                     <div className="font-bold text-xl">Filters</div>
@@ -263,7 +263,7 @@ const UserManagement = () => {
           </thead>
           <tbody>
             {currentItems?.map((employee, index) => (
-              <tr key={index} className="bg-[#F8F8F8]">
+              <tr key={index} className="border-gray-300">
                 <td className="border border-gray-300 px-4 py-2 ">
                   <div
                     className="relative"
@@ -275,7 +275,7 @@ const UserManagement = () => {
                     </div>
 
                     {actionDropDown === index && (
-                      <div className="absolute bg-white  py-3 w-36 -top-2 left-12 flex flex-col  gap-2 font-medium shadow-lg">
+                      <div className="absolute bg-white  py-3 w-36 -top-10 left-12 flex flex-col  gap-2 font-medium shadow-lg">
                         <div className="hover:scale-[1.01] hover:bg-gray-100 px-5 py-1 w-full rounded">
                           Edit details
                         </div>
