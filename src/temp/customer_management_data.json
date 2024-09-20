@@ -1,0 +1,947 @@
+[
+    {
+      "id": 1,
+      "profilePicture": "https://example.com/profile1.jpg",
+      "username": "ironman",
+      "userMail": "ironman@example.com",
+      "contactNumber": "+919876543210",
+      "userType": "admin",
+      "userStatus": "active",
+      "deviceInfo": [
+        {
+          "deviceName": "Arc Reactor Mk1",
+          "deviceType": "Power Source",
+          "deviceStatus": "connected",
+          "latestDeviceStatus": "2024-09-01"
+        },
+        {
+          "deviceName": "Iron Man Suit Mk3",
+          "deviceType": "Armor",
+          "deviceStatus": "connected",
+          "latestDeviceStatus": "2024-09-02"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "profilePicture": "https://example.com/profile2.jpg",
+      "username": "spiderman",
+      "userMail": "spiderman@example.com",
+      "contactNumber": "+919876543211",
+      "userType": "editor",
+      "userStatus": "inactive",
+      "deviceInfo": [
+        {
+          "deviceName": "Web Shooter Mk2",
+          "deviceType": "Gadget",
+          "deviceStatus": "suspended",
+          "latestDeviceStatus": "2024-09-03"
+        },
+        {
+          "deviceName": "Spider-Sense Enhancer",
+          "deviceType": "Wearable",
+          "deviceStatus": "connected",
+          "latestDeviceStatus": "2024-09-04"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "profilePicture": "https://example.com/profile3.jpg",
+      "username": "batman",
+      "userMail": "batman@example.com",
+      "contactNumber": "+919876543212",
+      "userType": "admin",
+      "userStatus": "active",
+      "deviceInfo": [
+        {
+          "deviceName": "Batmobile",
+          "deviceType": "Vehicle",
+          "deviceStatus": "connected",
+          "latestDeviceStatus": "2024-09-05"
+        },
+        {
+          "deviceName": "Batarang",
+          "deviceType": "Gadget",
+          "deviceStatus": "disconnected",
+          "latestDeviceStatus": "2024-09-06"
+        },
+        {
+          "deviceName": "Cowl",
+          "deviceType": "Wearable",
+          "deviceStatus": "connected",
+          "latestDeviceStatus": "2024-09-07"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "profilePicture": "https://example.com/profile4.jpg",
+      "username": "wonderwoman",
+      "userMail": "wonderwoman@example.com",
+      "contactNumber": "+919876543213",
+      "userType": "editor",
+      "userStatus": "inactive",
+      "deviceInfo": [
+        {
+          "deviceName": "Lasso of Truth",
+          "deviceType": "Weapon",
+          "deviceStatus": "connected",
+          "latestDeviceStatus": "2024-09-08"
+        },
+        {
+          "deviceName": "Invisible Jet",
+          "deviceType": "Vehicle",
+          "deviceStatus": "suspended",
+          "latestDeviceStatus": "2024-09-09"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "profilePicture": "https://example.com/profile5.jpg",
+      "username": "thor",
+      "userMail": "thor@example.com",
+      "contactNumber": "+919876543214",
+      "userType": "viewer",
+      "userStatus": "active",
+      "deviceInfo": [
+        {
+          "deviceName": "Mjolnir",
+          "deviceType": "Weapon",
+          "deviceStatus": "connected",
+          "latestDeviceStatus": "2024-09-10"
+        },
+        {
+          "deviceName": "Stormbreaker",
+          "deviceType": "Weapon",
+          "deviceStatus": "connected",
+          "latestDeviceStatus": "2024-09-11"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "profilePicture": "https://example.com/profile6.jpg",
+      "username": "hulk",
+      "userMail": "hulk@example.com",
+      "contactNumber": "+919876543215",
+      "userType": "admin",
+      "userStatus": "active",
+      "deviceInfo": [
+        {
+          "deviceName": "Hulkbuster Armor",
+          "deviceType": "Armor",
+          "deviceStatus": "connected",
+          "latestDeviceStatus": "2024-09-12"
+        },
+        {
+          "deviceName": "Gamma Radiation Detector",
+          "deviceType": "Gadget",
+          "deviceStatus": "disconnected",
+          "latestDeviceStatus": "2024-09-13"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "profilePicture": "https://example.com/profile7.jpg",
+      "username": "captainamerica",
+      "userMail": "captainamerica@example.com",
+      "contactNumber": "+919876543216",
+      "userType": "viewer",
+      "userStatus": "inactive",
+      "deviceInfo": [
+        {
+          "deviceName": "Shield",
+          "deviceType": "Weapon",
+          "deviceStatus": "connected",
+          "latestDeviceStatus": "2024-09-14"
+        },
+        {
+          "deviceName": "Combat Suit",
+          "deviceType": "Armor",
+          "deviceStatus": "suspended",
+          "latestDeviceStatus": "2024-09-15"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "profilePicture": "https://example.com/profile8.jpg",
+      "username": "blackwidow",
+      "userMail": "blackwidow@example.com",
+      "contactNumber": "+919876543217",
+      "userType": "editor",
+      "userStatus": "active",
+      "deviceInfo": [
+        {
+          "deviceName": "Widow's Bite",
+          "deviceType": "Gadget",
+          "deviceStatus": "connected",
+          "latestDeviceStatus": "2024-09-16"
+        },
+        {
+          "deviceName": "Stealth Suit",
+          "deviceType": "Armor",
+          "deviceStatus": "disconnected",
+          "latestDeviceStatus": "2024-09-17"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "profilePicture": "https://example.com/profile9.jpg",
+      "username": "vision",
+      "userMail": "vision@example.com",
+      "contactNumber": "+919876543218",
+      "userType": "viewer",
+      "userStatus": "active",
+      "deviceInfo": [
+        {
+          "deviceName": "Solar Gem",
+          "deviceType": "Power Source",
+          "deviceStatus": "connected",
+          "latestDeviceStatus": "2024-09-18"
+        },   {
+          "deviceName": "Buster",
+          "deviceType": "Armor",
+          "deviceStatus": "suspended",
+          "latestDeviceStatus": "2024-11-02"
+        },   {
+          "deviceName": "Buster",
+          "deviceType": "Armor",
+          "deviceStatus": "suspended",
+          "latestDeviceStatus": "2024-11-02"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "profilePicture": "https://example.com/profile10.jpg",
+      "username": "scarletwitch",
+      "userMail": "scarletwitch@example.com",
+      "contactNumber": "+919876543219",
+      "userType": "admin",
+      "userStatus": "active",
+      "deviceInfo": [
+        {
+          "deviceName": "Chaos Magic",
+          "deviceType": "Power Source",
+          "deviceStatus": "connected",
+          "latestDeviceStatus": "2024-09-19"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "profilePicture": "https://example.com/profile11.jpg",
+      "username": "blackpanther",
+      "userMail": "blackpanther@example.com",
+      "contactNumber": "+919876543220",
+      "userType": "editor",
+      "userStatus": "inactive",
+      "deviceInfo": [
+        {
+          "deviceName": "Vibranium Suit",
+          "deviceType": "Armor",
+          "deviceStatus": "connected",
+          "latestDeviceStatus": "2024-09-20"
+        },
+        {
+          "deviceName": "Wakandan Tech",
+          "deviceType": "Gadget",
+          "deviceStatus": "suspended",
+          "latestDeviceStatus": "2024-09-21"
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "profilePicture": "https://example.com/profile12.jpg",
+      "username": "greenlantern",
+      "userMail": "greenlantern@example.com",
+      "contactNumber": "+919876543221",
+      "userType": "viewer",
+      "userStatus": "active",
+      "deviceInfo": [
+        {
+          "deviceName": "Power Ring",
+          "deviceType": "Gadget",
+          "deviceStatus": "connected",
+          "latestDeviceStatus": "2024-09-22"
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "profilePicture": "https://example.com/profile13.jpg",
+      "username": "flash",
+      "userMail": "flash@example.com",
+      "contactNumber": "+919876543222",
+      "userType": "admin",
+      "userStatus": "active",
+      "deviceInfo": [
+        {
+          "deviceName": "Speed Force",
+          "deviceType": "Power Source",
+          "deviceStatus": "connected",
+          "latestDeviceStatus": "2024-09-23"
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "profilePicture": "https://example.com/profile14.jpg",
+      "username": "aquaman",
+      "userMail": "aquaman@example.com",
+      "contactNumber": "+919876543223",
+      "userType": "editor",
+      "userStatus": "inactive",
+      "deviceInfo": [
+        {
+          "deviceName": "Trident",
+          "deviceType": "Weapon",
+          "deviceStatus": "connected",
+          "latestDeviceStatus": "2024-09-24"
+        },
+        {
+          "deviceName": "Underwater Suit",
+          "deviceType": "Armor",
+          "deviceStatus": "suspended",
+          "latestDeviceStatus": "2024-09-25"
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "profilePicture": "https://example.com/profile15.jpg",
+      "username": "greenarrow",
+      "userMail": "greenarrow@example.com",
+      "contactNumber": "+919876543224",
+      "userType": "viewer",
+      "userStatus": "active",
+      "deviceInfo": [
+        {
+          "deviceName": "Bow and Arrow",
+          "deviceType": "Weapon",
+          "deviceStatus": "connected",
+          "latestDeviceStatus": "2024-09-26"
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "profilePicture": "https://example.com/profile16.jpg",
+      "username": "daredevil",
+      "userMail": "daredevil@example.com",
+      "contactNumber": "+919876543225",
+      "userType": "admin",
+      "userStatus": "inactive",
+      "deviceInfo": [
+        {
+          "deviceName": "Billy Club",
+          "deviceType": "Weapon",
+          "deviceStatus": "suspended",
+          "latestDeviceStatus": "2024-09-27"
+        },
+        {
+          "deviceName": "Enhanced Senses",
+          "deviceType": "Gadget",
+          "deviceStatus": "connected",
+          "latestDeviceStatus": "2024-09-28"
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "profilePicture": "https://example.com/profile17.jpg",
+      "username": "luke",
+      "userMail": "luke@example.com",
+      "contactNumber": "+919876543226",
+      "userType": "editor",
+      "userStatus": "active",
+      "deviceInfo": [
+        {
+          "deviceName": "Lightsaber",
+          "deviceType": "Weapon",
+          "deviceStatus": "connected",
+          "latestDeviceStatus": "2024-09-29"
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "profilePicture": "https://example.com/profile18.jpg",
+      "username": "yoda",
+      "userMail": "yoda@example.com",
+      "contactNumber": "+919876543227",
+      "userType": "viewer",
+      "userStatus": "inactive",
+      "deviceInfo": [
+        {
+          "deviceName": "Jedi Mind Tricks",
+          "deviceType": "Power Source",
+          "deviceStatus": "suspended",
+          "latestDeviceStatus": "2024-09-30"
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "profilePicture": "https://example.com/profile19.jpg",
+      "username": "palpatine",
+      "userMail": "palpatine@example.com",
+      "contactNumber": "+919876543228",
+      "userType": "admin",
+      "userStatus": "active",
+      "deviceInfo": [
+        {
+          "deviceName": "Dark Side Powers",
+          "deviceType": "Power Source",
+          "deviceStatus": "connected",
+          "latestDeviceStatus": "2024-10-01"
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "profilePicture": "https://example.com/profile20.jpg",
+      "username": "anakin",
+      "userMail": "anakin@example.com",
+      "contactNumber": "+919876543229",
+      "userType": "editor",
+      "userStatus": "inactive",
+      "deviceInfo": [
+        {
+          "deviceName": "Anakin's Starfighter",
+          "deviceType": "Vehicle",
+          "deviceStatus": "suspended",
+          "latestDeviceStatus": "2024-10-02"
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "profilePicture": "https://example.com/profile21.jpg",
+      "username": "rey",
+      "userMail": "rey@example.com",
+      "contactNumber": "+919876543230",
+      "userType": "admin",
+      "userStatus": "active",
+      "deviceInfo": [
+        {
+          "deviceName": "Force Powers",
+          "deviceType": "Power Source",
+          "deviceStatus": "connected",
+          "latestDeviceStatus": "2024-10-03"
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "profilePicture": "https://example.com/profile22.jpg",
+      "username": "wolverine",
+      "userMail": "wolverine@example.com",
+      "contactNumber": "+919876543231",
+      "userType": "editor",
+      "userStatus": "inactive",
+      "deviceInfo": [
+        {
+          "deviceName": "Claws",
+          "deviceType": "Weapon",
+          "deviceStatus": "connected",
+          "latestDeviceStatus": "2024-10-04"
+        },
+        {
+          "deviceName": "Healing Factor",
+          "deviceType": "Power Source",
+          "deviceStatus": "suspended",
+          "latestDeviceStatus": "2024-10-05"
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "profilePicture": "https://example.com/profile23.jpg",
+      "username": "storm",
+      "userMail": "storm@example.com",
+      "contactNumber": "+919876543232",
+      "userType": "admin",
+      "userStatus": "active",
+      "deviceInfo": [
+        {
+          "deviceName": "Weather Control",
+          "deviceType": "Power Source",
+          "deviceStatus": "connected",
+          "latestDeviceStatus": "2024-10-06"
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "profilePicture": "https://example.com/profile24.jpg",
+      "username": "magneto",
+      "userMail": "magneto@example.com",
+      "contactNumber": "+919876543233",
+      "userType": "editor",
+      "userStatus": "inactive",
+      "deviceInfo": [
+        {
+          "deviceName": "Magnetic Field Manipulation",
+          "deviceType": "Power Source",
+          "deviceStatus": "suspended",
+          "latestDeviceStatus": "2024-10-07"
+        }
+      ]
+    },
+    {
+      "id": 25,
+      "profilePicture": "https://example.com/profile25.jpg",
+      "username": "gambit",
+      "userMail": "gambit@example.com",
+      "contactNumber": "+919876543234",
+      "userType": "viewer",
+      "userStatus": "active",
+      "deviceInfo": [
+        {
+          "deviceName": "Charged Cards",
+          "deviceType": "Gadget",
+          "deviceStatus": "connected",
+          "latestDeviceStatus": "2024-10-08"
+        }
+      ]
+    },
+    {
+      "id": 26,
+      "profilePicture": "https://example.com/profile26.jpg",
+      "username": "rogue",
+      "userMail": "rogue@example.com",
+      "contactNumber": "+919876543235",
+      "userType": "admin",
+      "userStatus": "active",
+      "deviceInfo": [
+        {
+          "deviceName": "Absorption Powers",
+          "deviceType": "Power Source",
+          "deviceStatus": "connected",
+          "latestDeviceStatus": "2024-10-09"
+        }
+      ]
+    },
+    {
+      "id": 27,
+      "profilePicture": "https://example.com/profile27.jpg",
+      "username": "cyclops",
+      "userMail": "cyclops@example.com",
+      "contactNumber": "+919876543236",
+      "userType": "editor",
+      "userStatus": "inactive",
+      "deviceInfo": [
+        {
+          "deviceName": "Optic Blast",
+          "deviceType": "Power Source",
+          "deviceStatus": "connected",
+          "latestDeviceStatus": "2024-10-10"
+        }
+      ]
+    },
+    {
+      "id": 28,
+      "profilePicture": "https://example.com/profile28.jpg",
+      "username": "beast",
+      "userMail": "beast@example.com",
+      "contactNumber": "+919876543237",
+      "userType": "viewer",
+      "userStatus": "active",
+      "deviceInfo": [
+        {
+          "deviceName": "Enhanced Strength",
+          "deviceType": "Power Source",
+          "deviceStatus": "connected",
+          "latestDeviceStatus": "2024-10-11"
+        }
+      ]
+    },
+    {
+      "id": 29,
+      "profilePicture": "https://example.com/profile29.jpg",
+      "username": "nightcrawler",
+      "userMail": "nightcrawler@example.com",
+      "contactNumber": "+919876543238",
+      "userType": "admin",
+      "userStatus": "active",
+      "deviceInfo": [
+        {
+          "deviceName": "Teleportation Device",
+          "deviceType": "Gadget",
+          "deviceStatus": "suspended",
+          "latestDeviceStatus": "2024-10-12"
+        }
+      ]
+    },
+    {
+      "id": 30,
+      "profilePicture": "https://example.com/profile30.jpg",
+      "username": "storm",
+      "userMail": "storm@example.com",
+      "contactNumber": "+919876543239",
+      "userType": "editor",
+      "userStatus": "inactive",
+      "deviceInfo": [
+        {
+          "deviceName": "Weather Manipulation",
+          "deviceType": "Power Source",
+          "deviceStatus": "connected",
+          "latestDeviceStatus": "2024-10-13"
+        }
+      ]
+    },
+    {
+      "id": 31,
+      "profilePicture": "https://example.com/profile31.jpg",
+      "username": "saber",
+      "userMail": "saber@example.com",
+      "contactNumber": "+919876543240",
+      "userType": "admin",
+      "userStatus": "active",
+      "deviceInfo": [
+        {
+          "deviceName": "Laser Sword",
+          "deviceType": "Weapon",
+          "deviceStatus": "connected",
+          "latestDeviceStatus": "2024-10-14"
+        }
+      ]
+    },
+    {
+      "id": 32,
+      "profilePicture": "https://example.com/profile32.jpg",
+      "username": "joker",
+      "userMail": "joker@example.com",
+      "contactNumber": "+919876543241",
+      "userType": "viewer",
+      "userStatus": "inactive",
+      "deviceInfo": [
+        {
+          "deviceName": "Joker Gas",
+          "deviceType": "Gadget",
+          "deviceStatus": "suspended",
+          "latestDeviceStatus": "2024-10-15"
+        }
+      ]
+    },
+    {
+      "id": 33,
+      "profilePicture": "https://example.com/profile33.jpg",
+      "username": "harley",
+      "userMail": "harley@example.com",
+      "contactNumber": "+919876543242",
+      "userType": "editor",
+      "userStatus": "active",
+      "deviceInfo": [
+        {
+          "deviceName": "Bat-Gyro",
+          "deviceType": "Vehicle",
+          "deviceStatus": "connected",
+          "latestDeviceStatus": "2024-10-16"
+        }
+      ]
+    },
+    {
+      "id": 34,
+      "profilePicture": "https://example.com/profile34.jpg",
+      "username": "lex",
+      "userMail": "lex@example.com",
+      "contactNumber": "+919876543243",
+      "userType": "admin",
+      "userStatus": "active",
+      "deviceInfo": [
+        {
+          "deviceName": "Kryptonite Gun",
+          "deviceType": "Weapon",
+          "deviceStatus": "connected",
+          "latestDeviceStatus": "2024-10-17"
+        }
+      ]
+    },
+    {
+      "id": 35,
+      "profilePicture": "https://example.com/profile35.jpg",
+      "username": "riddler",
+      "userMail": "riddler@example.com",
+      "contactNumber": "+919876543244",
+      "userType": "viewer",
+      "userStatus": "inactive",
+      "deviceInfo": [
+        {
+          "deviceName": "Riddler's Riddle",
+          "deviceType": "Gadget",
+          "deviceStatus": "suspended",
+          "latestDeviceStatus": "2024-10-18"
+        }
+      ]
+    },
+    {
+      "id": 36,
+      "profilePicture": "https://example.com/profile36.jpg",
+      "username": "catwoman",
+      "userMail": "catwoman@example.com",
+      "contactNumber": "+919876543245",
+      "userType": "admin",
+      "userStatus": "active",
+      "deviceInfo": [
+        {
+          "deviceName": "Cat-O-Matic",
+          "deviceType": "Gadget",
+          "deviceStatus": "connected",
+          "latestDeviceStatus": "2024-10-19"
+        }
+      ]
+    },
+    {
+      "id": 37,
+      "profilePicture": "https://example.com/profile37.jpg",
+      "username": "bane",
+      "userMail": "bane@example.com",
+      "contactNumber": "+919876543246",
+      "userType": "editor",
+      "userStatus": "inactive",
+      "deviceInfo": [
+        {
+          "deviceName": "Venom",
+          "deviceType": "Power Source",
+          "deviceStatus": "suspended",
+          "latestDeviceStatus": "2024-10-20"
+        }
+      ]
+    },
+    {
+      "id": 38,
+      "profilePicture": "https://example.com/profile38.jpg",
+      "username": "greenlantern",
+      "userMail": "greenlantern@example.com",
+      "contactNumber": "+919876543247",
+      "userType": "viewer",
+      "userStatus": "active",
+      "deviceInfo": [
+        {
+          "deviceName": "Green Energy",
+          "deviceType": "Power Source",
+          "deviceStatus": "connected",
+          "latestDeviceStatus": "2024-10-21"
+        }
+      ]
+    },
+    {
+      "id": 39,
+      "profilePicture": "https://example.com/profile39.jpg",
+      "username": "vision",
+      "userMail": "vision@example.com",
+      "contactNumber": "+919876543248",
+      "userType": "admin",
+      "userStatus": "inactive",
+      "deviceInfo": [
+        {
+          "deviceName": "Vision Powers",
+          "deviceType": "Power Source",
+          "deviceStatus": "suspended",
+          "latestDeviceStatus": "2024-10-22"
+        }
+      ]
+    },
+    {
+      "id": 40,
+      "profilePicture": "https://example.com/profile40.jpg",
+      "username": "groot",
+      "userMail": "groot@example.com",
+      "contactNumber": "+919876543249",
+      "userType": "editor",
+      "userStatus": "active",
+      "deviceInfo": [
+        {
+          "deviceName": "Groot's Roots",
+          "deviceType": "Power Source",
+          "deviceStatus": "connected",
+          "latestDeviceStatus": "2024-10-23"
+        }
+      ]
+    },
+    {
+      "id": 41,
+      "profilePicture": "https://example.com/profile41.jpg",
+      "username": "rocket",
+      "userMail": "rocket@example.com",
+      "contactNumber": "+919876543250",
+      "userType": "viewer",
+      "userStatus": "inactive",
+      "deviceInfo": [
+        {
+          "deviceName": "Space Gun",
+          "deviceType": "Weapon",
+          "deviceStatus": "suspended",
+          "latestDeviceStatus": "2024-10-24"
+        }
+      ]
+    },
+    {
+      "id": 42,
+      "profilePicture": "https://example.com/profile42.jpg",
+      "username": "antman",
+      "userMail": "antman@example.com",
+      "contactNumber": "+919876543251",
+      "userType": "admin",
+      "userStatus": "active",
+      "deviceInfo": [
+        {
+          "deviceName": "Pym Particles",
+          "deviceType": "Gadget",
+          "deviceStatus": "connected",
+          "latestDeviceStatus": "2024-10-25"
+        }
+      ]
+    },
+    {
+      "id": 43,
+      "profilePicture": "https://example.com/profile43.jpg",
+      "username": "captainmarvel",
+      "userMail": "captainmarvel@example.com",
+      "contactNumber": "+919876543252",
+      "userType": "editor",
+      "userStatus": "inactive",
+      "deviceInfo": [
+        {
+          "deviceName": "Photon Blasters",
+          "deviceType": "Weapon",
+          "deviceStatus": "suspended",
+          "latestDeviceStatus": "2024-10-26"
+        }
+      ]
+    },
+    {
+      "id": 44,
+      "profilePicture": "https://example.com/profile44.jpg",
+      "username": "vision",
+      "userMail": "vision@example.com",
+      "contactNumber": "+919876543253",
+      "userType": "viewer",
+      "userStatus": "active",
+      "deviceInfo": [
+        {
+          "deviceName": "Solar Power",
+          "deviceType": "Power Source",
+          "deviceStatus": "connected",
+          "latestDeviceStatus": "2024-10-27"
+        }
+      ]
+    },
+    {
+      "id": 45,
+      "profilePicture": "https://example.com/profile45.jpg",
+      "username": "starfire",
+      "userMail": "starfire@example.com",
+      "contactNumber": "+919876543254",
+      "userType": "admin",
+      "userStatus": "inactive",
+      "deviceInfo": [
+        {
+          "deviceName": "Starbolts",
+          "deviceType": "Weapon",
+          "deviceStatus": "suspended",
+          "latestDeviceStatus": "2024-10-28"
+        }
+      ]
+    },
+    {
+      "id": 46,
+      "profilePicture": "https://example.com/profile46.jpg",
+      "username": "batman",
+      "userMail": "batman@example.com",
+      "contactNumber": "+919876543255",
+      "userType": "editor",
+      "userStatus": "active",
+      "deviceInfo": [
+        {
+          "deviceName": "Batmobile",
+          "deviceType": "Vehicle",
+          "deviceStatus": "connected",
+          "latestDeviceStatus": "2024-10-29"
+        }
+      ]
+    },
+    {
+      "id": 47,
+      "profilePicture": "https://example.com/profile47.jpg",
+      "username": "thor",
+      "userMail": "thor@example.com",
+      "contactNumber": "+919876543256",
+      "userType": "viewer",
+      "userStatus": "inactive",
+      "deviceInfo": [
+        {
+          "deviceName": "Mjolnir",
+          "deviceType": "Weapon",
+          "deviceStatus": "suspended",
+          "latestDeviceStatus": "2024-10-30"
+        }
+      ]
+    },
+    {
+      "id": 48,
+      "profilePicture": "https://example.com/profile48.jpg",
+      "username": "ironman",
+      "userMail": "ironman@example.com",
+      "contactNumber": "+919876543257",
+      "userType": "admin",
+      "userStatus": "active",
+      "deviceInfo": [
+        {
+          "deviceName": "Iron Suit",
+          "deviceType": "Armor",
+          "deviceStatus": "connected",
+          "latestDeviceStatus": "2024-10-31"
+        }
+      ]
+    },  {
+    "id": 49,
+    "profilePicture": "https://example.com/profile49.jpg",
+    "username": "blackwidow",
+    "userMail": "blackwidow@example.com",
+    "contactNumber": "+919876543258",
+    "userType": "editor",
+    "userStatus": "active",
+    "deviceInfo": [
+      {
+        "deviceName": "Widow's Bite",
+        "deviceType": "Weapon",
+        "deviceStatus": "connected",
+        "latestDeviceStatus": "2024-11-01"
+      }
+    ]
+  },
+  {
+    "id": 50,
+    "profilePicture": "https://example.com/profile50.jpg",
+    "username": "hulk",
+    "userMail": "hulk@example.com",
+    "contactNumber": "+919876543259",
+    "userType": "admin",
+    "userStatus": "inactive",
+    "deviceInfo": [
+      {
+        "deviceName": "Hulk Buster",
+        "deviceType": "Armor",
+        "deviceStatus": "suspended",
+        "latestDeviceStatus": "2024-11-02"
+      },   {
+        "deviceName": "Buster",
+        "deviceType": "Armor",
+        "deviceStatus": "suspended",
+        "latestDeviceStatus": "2024-11-02"
+      }
+    ]
+  }
+]
+
+
+  
