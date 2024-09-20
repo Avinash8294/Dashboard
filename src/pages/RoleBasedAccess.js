@@ -31,32 +31,39 @@ const RoleBasedAccess = () => {
       <h1 className="text-2xl font-bold mb-4">Role based access</h1>
 
       <div className="bg-[#EDF0F1] p-4 mb-4 rounded-md flex flex-col gap-2">
-        <h2 className="font-bold mb-2 text-lg text-[#4B6776]">Role Descriptions</h2>
+        <h2 className="font-bold mb-2 text-lg text-[#4B6776]">
+          Role Descriptions
+        </h2>
         <p>
-          <strong className="mr-2">Super Admin:</strong> Has the ability to enable or disable
-          access to each feature by selecting or unselecting the check mark.
+          <strong className="mr-2">Super Admin:</strong> Has the ability to
+          enable or disable access to each feature by selecting or unselecting
+          the check mark.
         </p>
         <p>
-          <strong className="mr-2">Customer Admin:</strong> Access is controlled by the Super
-          Admin, Customer Admin cannot change their own access.
+          <strong className="mr-2">Customer Admin:</strong> Access is controlled
+          by the Super Admin, Customer Admin cannot change their own access.
         </p>
         <p>
-          <strong className="mr-2">Billing Admin:</strong> Access is controlled by the Super
-          Admin, Billing Admin cannot change their own access.
+          <strong className="mr-2">Billing Admin:</strong> Access is controlled
+          by the Super Admin, Billing Admin cannot change their own access.
         </p>
       </div>
 
       <div className="border-b border-gray-300 rounded-lg overflow-hidden bg-white mb-4 font-medium">
         <button
           className={`py-2 px-4 ${
-            activeTab === "Customer Admin" ? "border-b-2 border-black text-[#182D40]" : "text-[#4B4F50]"
+            activeTab === "Customer Admin"
+              ? "border-b-2 border-black text-[#182D40]"
+              : "text-[#4B4F50]"
           }`}
           onClick={() => handleTabClick("Customer Admin")}>
           Customer Admin
         </button>
         <button
           className={`py-2 px-4 ${
-            activeTab === "Billing Admin" ? "border-b-2 border-black text-[#182D40]" : "text-[#4B4F50]"
+            activeTab === "Billing Admin"
+              ? "border-b-2 border-black text-[#182D40]"
+              : "text-[#4B4F50]"
           }`}
           onClick={() => handleTabClick("Billing Admin")}>
           Billing Admin
@@ -68,7 +75,7 @@ const RoleBasedAccess = () => {
           <tr>
             <th className="py-2 px-4 border-b">Features</th>
             {permissions.map((permission) => (
-              <th key={permission} className="py-2 px-4 border-b">
+              <th key={permission} className="py-2 px-4 border-b md:min-w-24">
                 {permission}
               </th>
             ))}
@@ -82,7 +89,7 @@ const RoleBasedAccess = () => {
                 <td
                   key={`${feature}-${permission}`}
                   className="py-2 px-4 border-b text-center">
-                  <input type="checkbox" className="size-4 " />
+                  <input type="checkbox" className="square-checkbox" />{" "}
                 </td>
               ))}
             </tr>
