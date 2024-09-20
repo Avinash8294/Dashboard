@@ -33,3 +33,34 @@ code {
   /* Add whatever CSS style will make your link look active. The example below (in my case) */
   @apply  text-white bg-white  md:bg-white md:text-black;
 }
+.square-checkbox {
+  -webkit-appearance: none;
+  appearance: none;
+  border: 2px solid #C8CFD2;
+  height: 20px;
+  width: 20px;
+  /* background-color: #fff; */
+  cursor: pointer;
+  border-radius: 2px; /* Square shape */
+  display: inline-block;
+  position: relative;
+}
+
+.square-checkbox:checked {
+  background-color: #007bff; /* You can adjust this if needed */
+}
+
+.square-checkbox::before {
+  content: '';
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+
+
