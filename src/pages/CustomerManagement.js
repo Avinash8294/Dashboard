@@ -130,13 +130,13 @@ const CustomerManagement = () => {
   return (
     <div className="flex flex-col gap-5 px-4 relative">
       <div className="flex justify-between items-center flex-wrap space-y-4 2xl:pr-8">
-        <div className="font-medium text-2xl">Device Management</div>
+        <div className="font-medium text-2xl">Customer Management</div>
         <div className="flex items-center justify-start md:justify-center gap-5 flex-wrap">
           <div className="search relative">
             <input
               type="search"
               className="border-2 border-gray-300 rounded outline-none md:w-44 lg:w-72 xl:w-80 2xl:w-96 p-2 pr-6"
-              placeholder="Model Number, WiFi Name, or User Email"
+              placeholder="User Name, Email, Contact Number"
             />
             <i className="fa-solid fa-magnifying-glass absolute top-[20%] text-lg right-[5%] text-gray-300"></i>
           </div>
@@ -252,28 +252,28 @@ const CustomerManagement = () => {
         <table className="min-w-full table-auto border-collapse border border-gray-300 border-t rounded overflow-hidden">
           <thead className="">
             <tr className="bg-[#1E4154] text-white">
-              <th className="border border-gray-300 px-4 py-2 text-left min-w-12">
+              <th className="border border-gray-300 px-4 py-2 text-center min-w-12">
                 Action
               </th>
-              <th className="border border-gray-300 px-4 py-2 text-left min-w-12">
+              <th className="border border-gray-300 px-4 py-2 text-center min-w-12">
                 <i className="fa-solid fa-angle-down"></i>
               </th>
-              <th className="border border-gray-300 px-4 py-2 text-left min-w-36">
+              <th className="border border-gray-300 px-4 py-2 text-center min-w-36">
                 Profile Picture
               </th>
-              <th className="border border-gray-300 px-4 py-2 text-left min-w-32">
+              <th className="border border-gray-300 px-4 py-2 text-center min-w-32">
                 User Name
               </th>
-              <th className="border border-gray-300 px-4 py-2 text-left min-w-52">
+              <th className="border border-gray-300 px-4 py-2 text-center min-w-52">
                 User Email
               </th>
-              <th className="border border-gray-300 px-4 py-2 text-left  min-w-44">
+              <th className="border border-gray-300 px-4 py-2 text-center  min-w-44">
                 Contact Number
               </th>
-              <th className="border border-gray-300 px-4 py-2 text-left min-w-32">
+              <th className="border border-gray-300 px-4 py-2 text-center min-w-32">
                 User Type
               </th>
-              <th className="border border-gray-300 px-4 py-2 text-left min-w-32">
+              <th className="border border-gray-300 px-4 py-2 text-center min-w-32">
                 User Status
               </th>
             </tr>
@@ -311,7 +311,7 @@ const CustomerManagement = () => {
                   </td>
                   <td
                     onClick={() => toggleUserDetails(index)}
-                    className="border border-gray-300 px-4 py-2 text-left min-w-12">
+                    className="border border-gray-300 px-4 py-2 text-center min-w-12">
                     <i
                       className={`fa-solid ${
                         expandedUserDetails === index
@@ -330,26 +330,28 @@ const CustomerManagement = () => {
                       />
                     </div>
                   </td>
-                  <td className="border border-gray-300 px-4 py-2">
+                  <td className="border border-gray-300 px-4 py-2 text-center">
                     {item?.username}
                   </td>
-                  <td className="border border-gray-300 px-4 py-2">
+                  <td className="border border-gray-300 px-4 py-2 text-center">
                     {item?.userMail}
                   </td>
-                  <td className="border border-gray-300 px-4 py-2">
+                  <td className="border border-gray-300 px-4 py-2 text-center">
                     {item?.contactNumber}
                   </td>
-                  <td className="border border-gray-300 px-4 py-2">
+                  <td className="border border-gray-300 px-4 py-2 text-center">
                     {item?.userType?.slice(0, 1).toUpperCase() +
                       item?.userType?.slice(1)?.toLocaleLowerCase()}
                   </td>
                   <td className="border border-gray-300 px-4 py-2">
+                    <div className="center">
                     <div
                       className={` w-24 p-1 center rounded-3xl ${
                         item?.userStatus === "active" && "bg-green-100 "
                       } ${item?.userStatus === "inactive" && "bg-red-100 "}`}>
                       {item?.userStatus?.slice(0, 1).toUpperCase() +
                         item?.userStatus?.slice(1)?.toLocaleLowerCase()}
+                    </div>
                     </div>
                   </td>
                 </tr>
@@ -360,16 +362,16 @@ const CustomerManagement = () => {
                       <table className="min-w-full border-collapse border border-gray-300 rounded-xl overflow-hidden">
                         <thead className="bg-[#C8CFD2] text-[#1E4154] border-2">
                           <tr>
-                            <th className=" px-4 py-3">Device Name</th>
-                            <th className=" px-4 py-3">Device Type</th>
-                            <th className=" px-4 py-3">Device Status</th>
-                            <th className=" px-4 py-3">Latest Status Update</th>
+                            <th className="px-4 py-3">Device Name</th>
+                            <th className="px-4 py-3">Device Type</th>
+                            <th className="px-4 py-3">Device Status</th>
+                            <th className="px-4 py-3">Latest Status Update</th>
                           </tr>
                         </thead>
                         <tbody>
                           {item.deviceInfo.map((device, deviceIndex) => (
                             <tr key={deviceIndex}>
-                              <td className="border border-[#DEDEDE] bg-[#F8F8F8] px-4 py-2">
+                              <td className="border border-[#DEDEDE] bg-[#F8F8F8] px-4 py-2 text-center">
                                 {device?.deviceName}
                               </td>
                               <td className="border border-[#DEDEDE] bg-[#F8F8F8] text-center px-4 py-2">

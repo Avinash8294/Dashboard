@@ -206,28 +206,28 @@ const DeviceManagement = () => {
         <table className="min-w-full table-auto border-collapse border border-gray-300 border-t rounded overflow-hidden">
           <thead className="">
             <tr className="bg-[#1E4154] text-white">
-              <th className="border border-gray-300 px-4 py-2 text-left min-w-12">
+              <th className="border border-gray-300 px-4 py-2 text-center min-w-12">
                 Action
               </th>
-              <th className="border border-gray-300 px-4 py-2 text-left min-w-52">
+              <th className="border border-gray-300 px-4 py-2 text-center min-w-52">
                 Model Number
               </th>
-              <th className="border border-gray-300 px-4 py-2 text-left min-w-32">
+              <th className="border border-gray-300 px-4 py-2 text-center min-w-32">
                 FW Version
               </th>
-              <th className="border border-gray-300 px-4 py-2 text-left min-w-32">
+              <th className="border border-gray-300 px-4 py-2 text-center min-w-32">
                 User Email
               </th>
-              <th className="border border-gray-300 px-4 py-2 text-left min-w-32">
+              <th className="border border-gray-300 px-4 py-2 text-center min-w-32">
                 Device Type
               </th>
-              <th className="border border-gray-300 px-4 py-2 text-left min-w-32">
+              <th className="border border-gray-300 px-4 py-2 text-center min-w-32">
                 Name of WiFi
               </th>
-              <th className="border border-gray-300 px-4 py-2 text-left min-w-32">
+              <th className="border border-gray-300 px-4 py-2 text-center min-w-32">
                 WiFi Password
               </th>
-              <th className="border border-gray-300 px-4 py-2 text-left min-w-32">
+              <th className="border border-gray-300 px-4 py-2 text-center min-w-32">
                 Device Status
               </th>
             </tr>
@@ -257,39 +257,42 @@ const DeviceManagement = () => {
                     )}
                   </div>
                 </td>
-                <td className="border border-gray-300 px-4 py-2">
+                <td className="border border-gray-300 px-4 py-2 text-center">
                   {item?.modelNumber}
                 </td>
-                <td className="border border-gray-300 px-4 py-2">
+                <td className="border border-gray-300 px-4 py-2 text-center">
                   {item?.fwVersion}
                 </td>
-                <td className="border border-gray-300 px-4 py-2">
+                <td className="border border-gray-300 px-4 py-2 text-center">
                   {item?.userEmail}
                 </td>
-                <td className="border border-gray-300 px-4 py-2">
+                <td className="border border-gray-300 px-4 py-2 text-center">
                   {item?.deviceType?.slice(0, 1)?.toUpperCase() +
                     item?.deviceType?.slice(1)}
                 </td>
-                <td className="border border-gray-300 px-4 py-2">
+                <td className="border border-gray-300 px-4 py-2 text-center">
                   {item?.nameOfWifi}
                 </td>
-                <td className="border border-gray-300 px-4 py-2">
+                <td className="border border-gray-300 px-4 py-2 text-center">
                   {item?.wifiPassword}
                 </td>
                 <td className={`border border-gray-300 px-4 py-2 $`}>
+                  <div className="center">
+
                   <div
-                    className={` w-24 p-1 center rounded ${
+                    className={`  w-24 p-1 center rounded-3xl  ${
                       item?.deviceStatus === "Active" &&
-                      "bg-green-500 text-white"
+                      "bg-green-100"
                     } ${
                       item?.deviceStatus === "Inactive" &&
-                      "bg-red-400 text-white"
+                      "bg-red-100"
                     } ${
                       item?.deviceStatus === "Suspended" &&
-                      "bg-gray-400 text-white"
+                      "bg-orange-100"
                     }`}>
                     {" "}
                     {item?.deviceStatus}
+                  </div>
                   </div>
                 </td>
               </tr>
