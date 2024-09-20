@@ -139,62 +139,65 @@ const DeviceManagement = () => {
               Filter <FilterIcon />
             </div>
             {isFilterPopUp && (
-  <div className="fixed right-0 top-0 bottom-0 z-20 w-80  p-5 py-8 pb-44 lg:pb-72 rounded bg-white shadow-lg">
-    <div className="flex flex-col gap-6 relative">
-      <div className="flex justify-between items-center">
-        <div className="font-bold text-xl">Filters</div>
-        <div
-          onClick={() => setIsFilterPopUp(!isFilterPopUp)}
-          className="cursor-pointer">
-          <X_mark />
-        </div>
-      </div>
-      <div className="flex flex-col gap-2">
-        <div className="font-medium">Role</div>
-        <div className="flex flex-col gap-2 text-[#4B4F50]">
-          <div className="flex gap-3">
-            <input id="all" type="checkbox" className="" />
-            <label htmlFor="all">All</label>
-          </div>
-          <div className="flex gap-3">
-            <input id="customer-admin" type="checkbox" className="" />
-            <label htmlFor="customer-admin">Customer Admin</label>
-          </div>
-          <div className="flex gap-3">
-            <input id="billing-admin" type="checkbox" className="" />
-            <label htmlFor="billing-admin">Billing Admin</label>
-          </div>
-        </div>
-      </div>
-      <div className="flex flex-col gap-2">
-        <div className="font-medium">Status</div>
-        <div className="flex flex-col gap-2 text-[#4B4F50]">
-          <div className="flex gap-3">
-            <input id="all-status" type="checkbox" className="" />
-            <label htmlFor="all-status">All</label>
-          </div>
-          <div className="flex gap-3">
-            <input id="active" type="checkbox" className="" />
-            <label htmlFor="active">Active</label>
-          </div>
-          <div className="flex gap-3">
-            <input id="inactive" type="checkbox" className="" />
-            <label htmlFor="inactive">Inactive</label>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div className="absolute bottom-7 right-0 flex justify-evenly w-full px-2 h-10">
-      <button className="w-32 py-1 rounded border border-[#182D40]">
-        Reset
-      </button>
-      <button className="w-32 py-1 rounded border border-[#182D40] bg-[#182D40] text-white">
-        Apply
-      </button>
-    </div>
-  </div>
-)}
-
+              <div className="fixed right-0 top-0 bottom-0 z-20 w-80  p-5 py-8 pb-44 lg:pb-72 rounded bg-white shadow-lg">
+                <div className="flex flex-col gap-6 relative">
+                  <div className="flex justify-between items-center">
+                    <div className="font-bold text-xl lg:text-2xl">Filters</div>
+                    <div
+                      onClick={() => setIsFilterPopUp(!isFilterPopUp)}
+                      className="cursor-pointer">
+                      <X_mark />
+                    </div>
+                  </div>
+                  <div className="flex flex-col gap-2">
+                    <div className="font-medium">Device Type</div>
+                    <div className="flex flex-col gap-2 text-[#4B4F50]">
+                      <div className="flex gap-3">
+                        <input id="all" type="checkbox" className="" />
+                        <label htmlFor="all">All</label>
+                      </div>
+                      <div className="flex gap-3">
+                        <input id="camera" type="checkbox" className="" />
+                        <label htmlFor="camera">Camera</label>
+                      </div>
+                      <div className="flex gap-3">
+                        <input id="speaker" type="checkbox" className="" />
+                        <label htmlFor="speaker">Speaker</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="flex flex-col gap-2">
+                    <div className="font-medium">Device Status</div>
+                    <div className="flex flex-col gap-2 text-[#4B4F50]">
+                      <div className="flex gap-3">
+                        <input id="all-status" type="checkbox" className="" />
+                        <label htmlFor="all-status">All</label>
+                      </div>
+                      <div className="flex gap-3">
+                        <input id="connected" type="checkbox" className="" />
+                        <label htmlFor="connected">Connected</label>
+                      </div>
+                      <div className="flex gap-3">
+                        <input id="disconnected" type="checkbox" className="" />
+                        <label htmlFor="disconnected">Disconnected</label>
+                      </div>
+                      <div className="flex gap-3">
+                        <input id="suspended" type="checkbox" className="" />
+                        <label htmlFor="suspended">Suspended</label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="absolute bottom-7 right-0 flex justify-evenly w-full px-2 h-10">
+                  <button className="w-32 py-1 rounded border border-[#182D40]">
+                    Reset
+                  </button>
+                  <button className="w-32 py-1 rounded border border-[#182D40] bg-[#182D40] text-white">
+                    Apply
+                  </button>
+                </div>
+              </div>
+            )}
           </div>
         </div>
       </div>
@@ -274,7 +277,7 @@ const DeviceManagement = () => {
                   {item?.wifiPassword}
                 </td>
                 <td className={`border border-gray-300 px-4 py-2 $`}>
-                  <div 
+                  <div
                     className={` w-24 p-1 center rounded ${
                       item?.deviceStatus === "Active" &&
                       "bg-green-500 text-white"

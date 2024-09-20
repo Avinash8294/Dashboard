@@ -147,7 +147,7 @@ const UserManagement = () => {
               <div className="fixed right-0 top-0 bottom-0 z-20 w-80  p-5 py-8 pb-44 lg:pb-72 rounded bg-white shadow-lg">
                 <div className=" flex flex-col gap-6 relative">
                   <div className="flex justify-between items-center">
-                    <div className="font-bold text-xl">Filters</div>
+                    <div className="font-bold text-xl lg:text-2xl">Filters</div>
                     <div
                       onClick={() => setIsFilterPopUp(!isFilterPopUp)}
                       className="cursor-pointer">
