@@ -2,10 +2,12 @@
 import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { toggleDarkMode } from "../redux/darkModeSlice";
+import { useNavigate } from "react-router-dom";
 const Header = () => {
   const dispatch = useDispatch();
   const darkMode = useSelector((state) => state.darkMode.darkMode);
   const [userMenu, setUserMenu] = useState(false);
+  const navigate = useNavigate();
 
   useEffect(() => {
     if (darkMode) {
@@ -56,7 +58,10 @@ const Header = () => {
           </svg>
           {userMenu && (
             <div className="p-4 absolute right-0 top-12 bg-white shadow-md rounded-md text-lg w-[130%]">
-              <div className="p-2 hover:bg-slate-100 cursor-pointer">
+              <div
+                onClick={() => navigate("profile")}
+                className="p-2 hover:bg-slate-100 cursor-pointer"
+              >
                 My Profile
               </div>
               <div className="p-2 hover:bg-slate-100 cursor-pointer">

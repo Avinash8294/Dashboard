@@ -9,6 +9,8 @@ import DeviceManagement from './DeviceManagement';
 import InventoryManagement from './InventoryManagement';
 import CustomerManagement from './CustomerManagement';
 import RoleBasedAccess from './RoleBasedAccess';
+import MyProfile from './MyProfile';
+
 
 function DashBoard() {
   return (
@@ -25,7 +27,7 @@ function DashBoard() {
               <Route path="inventory-management" element={<InventoryManagement />} />
               <Route path="customer-management" element={<CustomerManagement />} />
               <Route path="role-based-access" element={<RoleBasedAccess />} />
-            
+              <Route path="profile" element={<MyProfile />} />
             </Routes>
           </main>
         </div>
