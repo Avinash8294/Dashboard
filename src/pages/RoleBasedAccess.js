@@ -84,11 +84,11 @@ const RoleBasedAccess = () => {
         <tbody>
           {features.map((feature) => (
             <tr key={feature}>
-              <td className="py-2 px-4 border-b font-medium">{feature}</td>
+              <td className="py-2 px-4 border font-medium">{feature}</td>
               {permissions.map((permission) => (
                 <td
                   key={`${feature}-${permission}`}
-                  className="py-2 px-4 border-b text-center">
+                  className="py-2 px-4 border text-center">
                   <input type="checkbox" className="square-checkbox" />{" "}
                 </td>
               ))}
