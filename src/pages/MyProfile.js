@@ -2,9 +2,15 @@ import { useState } from "react";
 import PersonalInfo from "./PersonalInfo";
 import PasswordChange from "./PasswordChange";
 import Notification from "../components/notificationPopup";
+import { useLocation } from "react-router-dom";
 
 export default function MyProfile() {
-  const [activeTab, setActiveTab] = useState("profile");
+  const location = useLocation();
+  const currentTab = location.state;
+  console.log(currentTab);
+  const [activeTab, setActiveTab] = useState(
+    currentTab ? currentTab : "profile"
+  );
 
   return (
     <div className="w-full min-h-full overflow-auto mx-auto p-6 pr-8 space-y-6 bg-gray-100">

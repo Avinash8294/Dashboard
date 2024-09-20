@@ -80,8 +80,6 @@ const PersonalInfo = () => {
     return false; // Contact is invalid
   };
 
-  
-
   return (
     <div className="w-full">
       <div className="bg-white shadow-md p-5">

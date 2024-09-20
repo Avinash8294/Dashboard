@@ -16,6 +16,22 @@ const Header = () => {
       document.documentElement.classList.remove("dark");
     }
   }, [darkMode]);
+
+  const handleLogout = () => {
+    // Clear user session (authentication tokens, etc.)
+    localStorage.removeItem("currentUser");
+    localStorage.removeItem("authToken");
+
+    // Redirect to login page
+    navigate("/");
+
+    // Clear history to prevent going back to the previous page
+    window.history.pushState(null, "", window.location.href);
+    window.onpopstate = function () {
+      window.history.go(1);
+    };
+  };
+
   return (
     <header className="bg-gray-50 border-b-2 shadow-md p-4 z-20 flex justify-between items-center dark:bg-gray-800">
       <h1 className="text-xl font-bold"></h1>
@@ -59,15 +75,21 @@ const Header = () => {
           {userMenu && (
             <div className="p-4 absolute right-0 top-12 bg-white shadow-md rounded-md text-lg w-[130%]">
               <div
-                onClick={() => navigate("profile")}
+                onClick={() => navigate("profile", { state: "profile" })}
                 className="p-2 hover:bg-slate-100 cursor-pointer"
               >
                 My Profile
               </div>
-              <div className="p-2 hover:bg-slate-100 cursor-pointer">
+              <div
+                onClick={() => navigate("profile", { state: "password" })}
+                className="p-2 hover:bg-slate-100 cursor-pointer"
+              >
                 Change password
               </div>
-              <div className="p-2 hover:bg-slate-100 cursor-pointer text-red-500">
+              <div
+                onClick={handleLogout}
+                className="p-2 hover:bg-slate-100 cursor-pointer text-red-500"
+              >
                 Logout
               </div>
             </div>
