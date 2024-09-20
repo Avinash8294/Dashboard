@@ -1,0 +1,402 @@
+[
+    {
+        "id": 1,
+        "creationDate": "2023-01-01",
+        "deviceId": "1234567890",
+        "deviceModel": "Model A",
+        "deviceType": "mobile",
+        "deviceStatus": "connected"
+    },
+    {
+        "id": 2,
+        "creationDate": "2023-01-02",
+        "deviceId": "1234567891",
+        "deviceModel": "Model B",
+        "deviceType": "camera",
+        "deviceStatus": "disconnected"
+    },
+    {
+        "id": 3,
+        "creationDate": "2023-01-03",
+        "deviceId": "1234567892",
+        "deviceModel": "Model C",
+        "deviceType": "computer",
+        "deviceStatus": "suspended"
+    },
+    {
+        "id": 4,
+        "creationDate": "2023-01-04",
+        "deviceId": "1234567893",
+        "deviceModel": "Model D",
+        "deviceType": "tablet",
+        "deviceStatus": "connected"
+    },
+    {
+        "id": 5,
+        "creationDate": "2023-01-05",
+        "deviceId": "1234567894",
+        "deviceModel": "Model E",
+        "deviceType": "mobile",
+        "deviceStatus": "disconnected"
+    },
+    {
+        "id": 6,
+        "creationDate": "2023-01-06",
+        "deviceId": "1234567895",
+        "deviceModel": "Model F",
+        "deviceType": "camera",
+        "deviceStatus": "connected"
+    },
+    {
+        "id": 7,
+        "creationDate": "2023-01-07",
+        "deviceId": "1234567896",
+        "deviceModel": "Model G",
+        "deviceType": "computer",
+        "deviceStatus": "suspended"
+    },
+    {
+        "id": 8,
+        "creationDate": "2023-01-08",
+        "deviceId": "1234567897",
+        "deviceModel": "Model H",
+        "deviceType": "tablet",
+        "deviceStatus": "connected"
+    },
+    {
+        "id": 9,
+        "creationDate": "2023-01-09",
+        "deviceId": "1234567898",
+        "deviceModel": "Model I",
+        "deviceType": "mobile",
+        "deviceStatus": "disconnected"
+    },
+    {
+        "id": 10,
+        "creationDate": "2023-01-10",
+        "deviceId": "1234567899",
+        "deviceModel": "Model J",
+        "deviceType": "camera",
+        "deviceStatus": "connected"
+    },
+    {
+        "id": 11,
+        "creationDate": "2023-01-11",
+        "deviceId": "1234567800",
+        "deviceModel": "Model K",
+        "deviceType": "computer",
+        "deviceStatus": "suspended"
+    },
+    {
+        "id": 12,
+        "creationDate": "2023-01-12",
+        "deviceId": "1234567801",
+        "deviceModel": "Model L",
+        "deviceType": "tablet",
+        "deviceStatus": "connected"
+    },
+    {
+        "id": 13,
+        "creationDate": "2023-01-13",
+        "deviceId": "1234567802",
+        "deviceModel": "Model M",
+        "deviceType": "mobile",
+        "deviceStatus": "disconnected"
+    },
+    {
+        "id": 14,
+        "creationDate": "2023-01-14",
+        "deviceId": "1234567803",
+        "deviceModel": "Model N",
+        "deviceType": "camera",
+        "deviceStatus": "connected"
+    },
+    {
+        "id": 15,
+        "creationDate": "2023-01-15",
+        "deviceId": "1234567804",
+        "deviceModel": "Model O",
+        "deviceType": "computer",
+        "deviceStatus": "suspended"
+    },
+    {
+        "id": 16,
+        "creationDate": "2023-01-16",
+        "deviceId": "1234567805",
+        "deviceModel": "Model P",
+        "deviceType": "tablet",
+        "deviceStatus": "connected"
+    },
+    {
+        "id": 17,
+        "creationDate": "2023-01-17",
+        "deviceId": "1234567806",
+        "deviceModel": "Model Q",
+        "deviceType": "mobile",
+        "deviceStatus": "disconnected"
+    },
+    {
+        "id": 18,
+        "creationDate": "2023-01-18",
+        "deviceId": "1234567807",
+        "deviceModel": "Model R",
+        "deviceType": "camera",
+        "deviceStatus": "connected"
+    },
+    {
+        "id": 19,
+        "creationDate": "2023-01-19",
+        "deviceId": "1234567808",
+        "deviceModel": "Model S",
+        "deviceType": "computer",
+        "deviceStatus": "suspended"
+    },
+    {
+        "id": 20,
+        "creationDate": "2023-01-20",
+        "deviceId": "1234567809",
+        "deviceModel": "Model T",
+        "deviceType": "tablet",
+        "deviceStatus": "connected"
+    },
+    {
+        "id": 21,
+        "creationDate": "2023-01-21",
+        "deviceId": "1234567810",
+        "deviceModel": "Model U",
+        "deviceType": "mobile",
+        "deviceStatus": "disconnected"
+    },
+    {
+        "id": 22,
+        "creationDate": "2023-01-22",
+        "deviceId": "1234567811",
+        "deviceModel": "Model V",
+        "deviceType": "camera",
+        "deviceStatus": "connected"
+    },
+    {
+        "id": 23,
+        "creationDate": "2023-01-23",
+        "deviceId": "1234567812",
+        "deviceModel": "Model W",
+        "deviceType": "computer",
+        "deviceStatus": "suspended"
+    },
+    {
+        "id": 24,
+        "creationDate": "2023-01-24",
+        "deviceId": "1234567813",
+        "deviceModel": "Model X",
+        "deviceType": "tablet",
+        "deviceStatus": "connected"
+    },
+    {
+        "id": 25,
+        "creationDate": "2023-01-25",
+        "deviceId": "1234567814",
+        "deviceModel": "Model Y",
+        "deviceType": "mobile",
+        "deviceStatus": "disconnected"
+    },
+    {
+        "id": 26,
+        "creationDate": "2023-01-26",
+        "deviceId": "1234567815",
+        "deviceModel": "Model Z",
+        "deviceType": "camera",
+        "deviceStatus": "connected"
+    },
+    {
+        "id": 27,
+        "creationDate": "2023-01-27",
+        "deviceId": "1234567816",
+        "deviceModel": "Model AA",
+        "deviceType": "computer",
+        "deviceStatus": "suspended"
+    },
+    {
+        "id": 28,
+        "creationDate": "2023-01-28",
+        "deviceId": "1234567817",
+        "deviceModel": "Model AB",
+        "deviceType": "tablet",
+        "deviceStatus": "connected"
+    },
+    {
+        "id": 29,
+        "creationDate": "2023-01-29",
+        "deviceId": "1234567818",
+        "deviceModel": "Model AC",
+        "deviceType": "mobile",
+        "deviceStatus": "disconnected"
+    },
+    {
+        "id": 30,
+        "creationDate": "2023-01-30",
+        "deviceId": "1234567819",
+        "deviceModel": "Model AD",
+        "deviceType": "camera",
+        "deviceStatus": "connected"
+    },
+    {
+        "id": 31,
+        "creationDate": "2023-01-31",
+        "deviceId": "1234567820",
+        "deviceModel": "Model AE",
+        "deviceType": "computer",
+        "deviceStatus": "suspended"
+    },
+    {
+        "id": 32,
+        "creationDate": "2023-02-01",
+        "deviceId": "1234567821",
+        "deviceModel": "Model AF",
+        "deviceType": "tablet",
+        "deviceStatus": "connected"
+    },
+    {
+        "id": 33,
+        "creationDate": "2023-02-02",
+        "deviceId": "1234567822",
+        "deviceModel": "Model AG",
+        "deviceType": "mobile",
+        "deviceStatus": "disconnected"
+    },
+    {
+        "id": 34,
+        "creationDate": "2023-02-03",
+        "deviceId": "1234567823",
+        "deviceModel": "Model AH",
+        "deviceType": "camera",
+        "deviceStatus": "connected"
+    },
+    {
+        "id": 35,
+        "creationDate": "2023-02-04",
+        "deviceId": "1234567824",
+        "deviceModel": "Model AI",
+        "deviceType": "computer",
+        "deviceStatus": "suspended"
+    },
+    {
+        "id": 36,
+        "creationDate": "2023-02-05",
+        "deviceId": "1234567825",
+        "deviceModel": "Model AJ",
+        "deviceType": "tablet",
+        "deviceStatus": "connected"
+    },
+    {
+        "id": 37,
+        "creationDate": "2023-02-06",
+        "deviceId": "1234567826",
+        "deviceModel": "Model AK",
+        "deviceType": "mobile",
+        "deviceStatus": "disconnected"
+    },
+    {
+        "id": 38,
+        "creationDate": "2023-02-07",
+        "deviceId": "1234567827",
+        "deviceModel": "Model AL",
+        "deviceType": "camera",
+        "deviceStatus": "connected"
+    },
+    {
+        "id": 39,
+        "creationDate": "2023-02-08",
+        "deviceId": "1234567828",
+        "deviceModel": "Model AM",
+        "deviceType": "computer",
+        "deviceStatus": "suspended"
+    },
+    {
+        "id": 40,
+        "creationDate": "2023-02-09",
+        "deviceId": "1234567829",
+        "deviceModel": "Model AN",
+        "deviceType": "tablet",
+        "deviceStatus": "connected"
+    },
+    {
+        "id": 41,
+        "creationDate": "2023-02-10",
+        "deviceId": "1234567830",
+        "deviceModel": "Model AO",
+        "deviceType": "mobile",
+        "deviceStatus": "disconnected"
+    },
+    {
+        "id": 42,
+        "creationDate": "2023-02-11",
+        "deviceId": "1234567831",
+        "deviceModel": "Model AP",
+        "deviceType": "camera",
+        "deviceStatus": "connected"
+    },
+    {
+        "id": 43,
+        "creationDate": "2023-02-12",
+        "deviceId": "1234567832",
+        "deviceModel": "Model AQ",
+        "deviceType": "computer",
+        "deviceStatus": "suspended"
+    },
+    {
+        "id": 44,
+        "creationDate": "2023-02-13",
+        "deviceId": "1234567833",
+        "deviceModel": "Model AR",
+        "deviceType": "tablet",
+        "deviceStatus": "connected"
+    },
+    {
+        "id": 45,
+        "creationDate": "2023-02-14",
+        "deviceId": "1234567834",
+        "deviceModel": "Model AS",
+        "deviceType": "mobile",
+        "deviceStatus": "disconnected"
+    },
+    {
+        "id": 46,
+        "creationDate": "2023-02-15",
+        "deviceId": "1234567835",
+        "deviceModel": "Model AT",
+        "deviceType": "camera",
+        "deviceStatus": "connected"
+    },
+    {
+        "id": 47,
+        "creationDate": "2023-02-16",
+        "deviceId": "1234567836",
+        "deviceModel": "Model AU",
+        "deviceType": "computer",
+        "deviceStatus": "suspended"
+    },
+    {
+        "id": 48,
+        "creationDate": "2023-02-17",
+        "deviceId": "1234567837",
+        "deviceModel": "Model AV",
+        "deviceType": "tablet",
+        "deviceStatus": "connected"
+    },
+    {
+        "id": 49,
+        "creationDate": "2023-02-18",
+        "deviceId": "1234567838",
+        "deviceModel": "Model AW",
+        "deviceType": "mobile",
+        "deviceStatus": "disconnected"
+    },
+    {
+        "id": 50,
+        "creationDate": "2023-02-19",
+        "deviceId": "1234567839",
+        "deviceModel": "Model AX",
+        "deviceType": "camera",
+        "deviceStatus": "connected"
+    }
+]

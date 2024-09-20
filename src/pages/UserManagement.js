@@ -220,43 +220,43 @@ const UserManagement = () => {
         <table className="min-w-full table-auto border-collapse border border-gray-300 border-t rounded overflow-hidden">
           <thead className="">
             <tr className="bg-[#1E4154] text-white">
-              <th className="border border-gray-300 px-4 py-2 text-left min-w-12">
+              <th className="border border-gray-300 px-4 py-2 text-center min-w-12">
                 Action
               </th>
-              <th className="border border-gray-300 px-4 py-2 text-left min-w-52">
+              <th className="border border-gray-300 px-4 py-2 text-center min-w-52">
                 Email
               </th>
-              <th className="border border-gray-300 px-4 py-2 text-left min-w-36">
+              <th className="border border-gray-300 px-4 py-2 text-center min-w-36">
                 Profile Picture
               </th>
-              <th className="border border-gray-300 px-4 py-2 text-left min-w-32">
+              <th className="border border-gray-300 px-4 py-2 text-center min-w-32">
                 Employee ID
               </th>
-              <th className="border border-gray-300 px-4 py-2 text-left min-w-44">
+              <th className="border border-gray-300 px-4 py-2 text-center min-w-44">
                 First Name
               </th>
-              <th className="border border-gray-300 px-4 py-2 text-left min-w-44">
+              <th className="border border-gray-300 px-4 py-2 text-center min-w-44">
                 Middle Name
               </th>
-              <th className="border border-gray-300 px-4 py-2 text-left min-w-44">
+              <th className="border border-gray-300 px-4 py-2 text-center min-w-44">
                 Last Name
               </th>
-              <th className="border border-gray-300 px-4 py-2 text-left min-w-44">
+              <th className="border border-gray-300 px-4 py-2 text-center min-w-44">
                 Role
               </th>
-              <th className="border border-gray-300 px-4 py-2 text-left min-w-40">
+              <th className="border border-gray-300 px-4 py-2 text-center min-w-40">
                 Contact Number
               </th>
-              <th className="border border-gray-300 px-4 py-2 text-left min-w-40">
+              <th className="border border-gray-300 px-4 py-2 text-center min-w-40">
                 Creation Date
               </th>
-              <th className="border border-gray-300 px-4 py-2 text-left min-w-40">
+              <th className="border border-gray-300 px-4 py-2 text-center min-w-40">
                 Department
               </th>
-              <th className="border border-gray-300 px-4 py-2 text-left min-w-40">
+              <th className="border border-gray-300 px-4 py-2 text-center min-w-40">
                 Designation
               </th>
-              <th className="border border-gray-300 px-4 py-2 text-left min-w-28">
+              <th className="border border-gray-300 px-4 py-2 text-center min-w-28">
                 Status
               </th>
             </tr>
@@ -286,7 +286,7 @@ const UserManagement = () => {
                     )}
                   </div>
                 </td>
-                <td className="border border-gray-300 px-4 py-2">
+                <td className="border border-gray-300 px-4 py-2 text-center">
                   {employee.email}
                 </td>
                 <td className="border border-gray-300 px-4 py-2">
@@ -299,35 +299,48 @@ const UserManagement = () => {
                     />
                   </div>
                 </td>
-                <td className="border border-gray-300 px-4 py-2">
+                <td className="border border-gray-300 px-4 py-2 text-center">
                   {employee.employeeId}
                 </td>
-                <td className="border border-gray-300 px-4 py-2">
+                <td className="border border-gray-300 px-4 py-2 text-center">
                   {employee.firstName}
                 </td>
-                <td className="border border-gray-300 px-4 py-2">
+                <td className="border border-gray-300 px-4 py-2 text-center">
                   {employee.middleName}
                 </td>
-                <td className="border border-gray-300 px-4 py-2">
+                <td className="border border-gray-300 px-4 py-2 text-center">
                   {employee.lastName}
                 </td>
-                <td className="border border-gray-300 px-4 py-2">
+                <td className="border border-gray-300 px-4 py-2 text-center">
                   {employee.role}
                 </td>
-                <td className="border border-gray-300 px-4 py-2">
+                <td className="border border-gray-300 px-4 py-2 text-center">
                   {employee.contactNumber}
                 </td>
-                <td className="border border-gray-300 px-4 py-2">
+                <td className="border border-gray-300 px-4 py-2 text-center">
                   {employee.creationDate}
                 </td>
-                <td className="border border-gray-300 px-4 py-2">
+                <td className="border border-gray-300 px-4 py-2 text-center">
                   {employee.department}
                 </td>
-                <td className="border border-gray-300 px-4 py-2">
+                <td className="border border-gray-300 px-4 py-2 text-center">
                   {employee.designation}
                 </td>
-                <td className="border border-gray-300 px-4 py-2">
-                  {employee.status}
+                <td className={`border border-gray-300 px-4 py-2 $ `}>
+                 <div className="center">
+                  <div
+                    className={`w-28 p-1 center rounded-3xl ${
+                      employee?.status === "Active" &&
+                      "bg-green-100"
+                    } ${
+                      employee?.status === "Inactive" &&
+                      "bg-red-100"
+                    } `}>
+                    {" "}
+                    {employee?.status?.slice(0, 1)?.toUpperCase() +
+                    employee?.status?.slice(1)}
+                  </div>
+                  </div>
                 </td>
               </tr>
             ))}
