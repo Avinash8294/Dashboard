@@ -356,7 +356,7 @@ const CustomerManagement = () => {
 
                 {expandedUserDetails === index && (
                   <tr className={`${itemPerPage-index <=2 ? "relative" :"" }`}>
-                    <td colSpan={8} className={`p-2 ${itemPerPage-index <=2 ? "absolute bottom-0 w-full" :"" }`}>
+                    <td colSpan={8} className={`p-2 ${itemPerPage-index <=2 ? "absolute bottom-10 w-full" :"" }`}>
                       <table className="min-w-full border-collapse border border-gray-300 rounded-xl overflow-hidden">
                         <thead className="bg-[#C8CFD2] text-[#1E4154] border-2">
                           <tr>
