@@ -27,7 +27,7 @@ const RoleBasedAccess = () => {
   ];
 
   return (
-    <div className="p-6 bg-gray-50">
+    <div className="p-6 bg-gray-50 ">
       <h1 className="text-2xl font-bold mb-4">Role based access</h1>
 
       <div className="bg-[#EDF0F1] p-4 mb-4 rounded-md flex flex-col gap-2">
@@ -69,8 +69,10 @@ const RoleBasedAccess = () => {
           Billing Admin
         </button>
       </div>
+<div className="rounded-md overflow-hidden">
 
-      <table className="min-w-full bg-white border border-gray-300 rounded-md overflow-hidden">
+
+      <table className="min-w-full bg-white border border-gray-300  ">
         <thead className="bg-[#1E4154] text-white">
           <tr>
             <th className="py-2 px-4 border-b">Features</th>
@@ -84,11 +86,11 @@ const RoleBasedAccess = () => {
         <tbody>
           {features.map((feature) => (
             <tr key={feature}>
-              <td className="py-2 px-4 border-b font-medium">{feature}</td>
+              <td className="py-2 px-4 border font-medium">{feature}</td>
               {permissions.map((permission) => (
                 <td
                   key={`${feature}-${permission}`}
-                  className="py-2 px-4 border-b text-center">
+                  className="py-2 px-4 border text-center">
                   <input type="checkbox" className="square-checkbox" />{" "}
                 </td>
               ))}
@@ -96,6 +98,7 @@ const RoleBasedAccess = () => {
           ))}
         </tbody>
       </table>
+      </div>
     </div>
   );
 };
