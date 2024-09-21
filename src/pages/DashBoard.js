@@ -27,7 +27,7 @@ function DashBoard() {
               <Route path="inventory-management" element={<InventoryManagement />} />
               <Route path="customer-management" element={<CustomerManagement />} />
               <Route path="role-based-access" element={<RoleBasedAccess />} />
-              <Route path="profile" element={<MyProfile />} />
+              <Route path="profile/:tab?" element={<MyProfile />} />
             </Routes>
           </main>
         </div>

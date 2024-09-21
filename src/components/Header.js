@@ -75,13 +75,13 @@ const Header = () => {
           {userMenu && (
             <div className="p-4 absolute right-0 top-12 bg-white shadow-md rounded-md text-lg w-[130%]">
               <div
-                onClick={() => navigate("profile", { state: "profile" })}
+                onClick={() => navigate("profile/profile")}
                 className="p-2 hover:bg-slate-100 cursor-pointer"
               >
                 My Profile
               </div>
               <div
-                onClick={() => navigate("profile", { state: "password" })}
+                onClick={() => navigate("profile/password")}
                 className="p-2 hover:bg-slate-100 cursor-pointer"
               >
                 Change password
